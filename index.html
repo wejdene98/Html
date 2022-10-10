@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paiement</title>
+    </head>
+    <body>
+        <h2>
+            <i> Merci de Remplir les champs &#128515</i>
+        </h2>
+        <img
+            src="photo.jpg"
+            alt=""
+            width="1500"
+            height="300"
+        >
+        <form>
+            <fieldset>
+                <legend>Votre identité &#128180;</legend>
+                <ol>
+                    <li>
+                        <label>Nom</label>
+                        <input name="nom" type="text" placeholder="Prénom et nom">
+                    </li>
+                    <li>
+                        <label>Email</label>
+                        <input
+                            name="email"
+                            type="email"
+                            placeholder="Ecrire votre email"
+                            minlength="8"
+                        >
+                    </li>
+                    <li>
+                        <label>Téléphone</label>
+                        <input
+                            name="telephone"
+                            type="tel"
+                            placeholder="Exemple: +216 987654321"
+                            required
+                        >
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de livraison &#128233; </legend>
+                <ol>
+                    <li>
+                        <label>Adresse</label>
+                        <textarea name="adresse" rows="5" required></textarea>
+                    </li>
+                    <li>
+                        <label>Code postal</label>
+                        <input name="codepostal" type="text" required>
+                    </li>
+                    <li>
+                        <label>Pays</label>
+                        <input name="pays" type="text" required>
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Informations CB &#128179;</legend>
+                <ol>
+                    <li>
+                        <fieldset>
+                            <legend>Type de carte bancaire</legend>
+                            <ol>
+                                <li>
+                                    <input name="typedecarte" type="radio">
+                                    <label>Visa</label>
+                                </li>
+                                <li>
+                                    <input name="typedecarte" type="radio">
+                                    <label>AmEx</label>
+                                </li>
+                                <li>
+                                    <input name="typedecarte" type="radio">
+                                    <label>Mastercard</label>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label>N° de carte</label>
+                        <input name="numerodecarte" type="number" required>
+                    </li>
+                    <li>
+                        <label for="securite">Code sécurité</label>
+                        <input name="securite" type="number" required>
+                    </li>
+                    <li>
+                        <label>Nom du porteur</label>
+                        <input name="nomporteur" type="text" placeholder="">
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <button type="submit">
+                    <b>ACHETER &#9989;</b>
+                </button>
+                <button type="reset">
+                    <b>ANNULER &#10060;</b>
+                </button>
+            </fieldset>
+        </form>
+    </body>
+</html>
